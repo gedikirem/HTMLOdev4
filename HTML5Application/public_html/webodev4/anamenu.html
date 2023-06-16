@@ -1,0 +1,197 @@
+<!-- 02220224038 -->
+<!-- İREM GEDİK -->
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Restoran Menüsü</title>
+    <link href='https://fonts.googleapis.com/css?family=Sonsie One|Solitreo' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            font-family:'Sonsie One';
+            background:#23242a;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            min-height: 200vh;
+
+        }
+        .container{
+            position: relative;
+            margin: 100px;
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+        }
+        .container .icon{
+            position: relative;
+            left: -50%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .container .icon .imgBx{
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px #e2e4d6 ,0 0 0 6px white;
+            transform:rotate(calc(360deg/6 *var(--i)));
+            transform-origin: 430px;
+            z-index: 100;
+            overflow: hidden;
+        }
+        .container .icon .imgBx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: width 1s, height 1s, transform 1s;
+        }
+        .container .icon .imgBx img:hover{
+            opacity: 0.5;
+            transform: rotate(90deg);
+
+        }
+        .content{
+            position:absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+        .content::before{
+            content: '';
+            position: absolute;
+            inset: 90px;
+            border: 4px solid transparent;
+            border-left: 4px  solid #ffffb3;
+            border-right: 4px solid #ffccf7;
+            border-radius: 50%;
+            animation: animt_01 5s linear infinite;
+            z-index:1;
+            pointer-events:none;
+        }
+        @keyframes animt_01
+        {
+            0%{
+                rotate:0deg;
+
+            }
+            100%{
+                rotate:360deg;
+
+            }
+        }
+        .content::after{
+            content: '';
+            position: absolute;
+            inset: 140px;
+            border: 4px solid transparent;
+            border-left: 4px  solid #f1f1f2 ;
+            border-right: 4px solid #99ffff;
+            border-radius: 50%;
+            animation: animt_02 2.5s linear infinite;
+            z-index:1;
+            pointer-events:none;
+
+        }
+        @keyframes animt_02
+        {
+            0%{
+                rotate:0deg;
+
+            }
+            100%{
+                rotate:360deg;
+
+            }
+        }
+        .menu h1{
+            margin:280px 220px 300px 200px;
+            font-size: 4em;
+            color:#ffffff;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+           
+        }
+       .first{
+            background:rgba(242, 242, 242,0.5);
+            border: 1px solid #ccccff;
+            border-bottom-right-radius:40px;
+            border-top-left-radius: 40px;
+            margin-top:90px;
+            margin-left:100px;
+            width: 500px;
+            height:170px;
+            color: black;
+            font-family:'Solitreo';
+            text-align:center;
+        }
+        .first:hover{
+            background-color:#23242a;
+            color: #ffffff;
+            border-bottom-color: #cc99ff;
+            text-shadow: 0 0 3px #ffffff;
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>  
+  
+<div class="container">
+    <div class="icon">   
+       <div class="imgBx" style="--i:1;">
+        <a href="birinci.html">
+        <img src="https://i.pinimg.com/564x/71/7a/9d/717a9d4b4481dc280b7ea072c9591d1a.jpg" alt="Adana Kebap" width="250" height="250">
+        </a>
+       </div>  
+       <div class="imgBx" style="--i:2;">
+       <a href="ikinci.html">
+       <img src="https://i.pinimg.com/564x/aa/99/1d/aa991dee0a2d236513a2a4f90dcf4e70.jpg" alt="California Roll" width="250" height="250">
+       </a>
+       </div> 
+       <div class="imgBx" style="--i:3;">
+       <a href="ucuncu.html">
+       <img src="https://i.pinimg.com/564x/65/0c/be/650cbe28905894c3916f6a349480274d.jpg"  alt="Pizza" width="250" height="250">
+       </a>     
+       </div>  
+       <div class="imgBx" style="--i:4;">
+       <a href="dorduncu.html">
+       <img src="https://i.pinimg.com/564x/ff/fd/01/fffd01a46a3fc9f3835afe4508997b2d.jpg" alt="Künefe" width="250" height="250">
+       </a>     
+       </div>  
+       <div class="imgBx" style="--i:5;">
+        <a href="besinci.html">
+        <img src="https://i.pinimg.com/564x/cf/84/cc/cf84ccd1592f0e3964e2ac0ac98c5160.jpg" alt="Tavuk" width="250" height="250">
+        </a>    
+       </div>
+       <div class="imgBx" style="--i:6;">
+       <a href="altıncı.html">
+       <img src="https://i.pinimg.com/564x/a6/55/be/a655be9b047a2eac488abb3176b9e8f5.jpg" alt="Baklava" width="250" height="250"></a>
+       </div>  
+    </div>
+    <div class="content">
+        <div class="menu">
+            <h1 class="font-effect-neon">MENU</h1>
+        </div>
+    </div>            
+    <p class="first"><br>
+    1.Adana Kebab<br>
+    2.California Roll<br>
+    3.Pizza<br>
+    4.Künefe<br>
+    5.Tavuk<br>
+    6.Baklava
+   </p>  
+</body>
+</html>

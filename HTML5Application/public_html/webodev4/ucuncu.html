@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Pizza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Alkatra|Solitreo' rel='stylesheet'>
+    <style>      
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing:border-box;
+        }
+        body{ 
+            background:#dfbf9f;
+        }
+        img{
+            margin:30px;
+            float: left;
+            border-radius: 10px;
+            transition: 2s;
+            border:6px solid #000000;
+        }
+        .head{
+            border:2px solid black;
+            border-top: none;
+            border-left: none;
+            border-right:none;
+            border-bottom-color: white;
+            width:730px;
+            margin: 30px 200px 20px 30px;  
+        }
+       .head h1{
+            width:730px;
+            margin: 30px 200px 10px 5px;
+            font-size: 3.2em;
+            font-family: 'Alkatra';   
+            text-align: center;    
+        }
+        .head h1:hover,h3:hover{
+            color:#000000;
+            background-color: rgba(255, 255, 255,0.3);
+            text-shadow: 0 0 3px black;
+          
+        }
+        .head h3{
+            margin: 0px;
+            text-align: right;
+            font-size: 1.2em;
+        }
+        ul{
+            margin: 30px 100px 5px 20px;
+            padding: 2px; 
+        }
+        li{
+            border-bottom:1px solid #ffffff;
+            width: 260px;
+            padding: 6px;   
+            color:#ffffff;
+            list-style-type: square;  
+            font-family: 'Solitreo';
+        }
+        li:hover{
+            background-color:#000000;
+            color:#ffffff;
+        }
+        .list{
+              border:1px solid #000000;
+              border-width:6px;
+              width:300px;
+              height: 300px;
+              margin: 30px 5px 50px 300px;
+              background:url("https://i.pinimg.com/564x/1f/32/ed/1f32ed0404f99c79a72b12aa2333afe9.jpg");
+              border-radius: 10px; 
+        }
+           .bas{
+            border:none;
+            font-size: 1.4em;
+            width: 250px;
+            padding: 3px;   
+            color:#ffffff;
+            list-style-type:none;
+            margin-top:0px;
+        }
+         .logo{
+          float: right;
+          margin-top: 2px;
+          margin-right:50px;
+          border-radius: 10px;
+         
+        }
+    </style>
+</head>
+<body>
+<img class="logo" src="https://i.pinimg.com/564x/57/24/0a/57240a06614b1ac9307636f3d7c4744b.jpg" width="70" height="70" alt="logo"/>
+<div class="head">
+    <h1>PİZZA</h1> 
+    <h3>Fiyat:200TL</h3>
+</div>
+    
+<div class="pizza">
+   <img src="https://i.pinimg.com/564x/65/0c/be/650cbe28905894c3916f6a349480274d.jpg" width="300" height="300" alt="Pizza"/> 
+</div>
+<div class="list">
+     <ul>
+        <li  class="bas">İÇİNDEKİLER</li>
+        <li>Peynir,zeytin,domates,biber</li>
+        <li>Porsiyon Miktarı</li>
+        <li>Küçük Boy : 60TL</li>
+        <li>Orta Boy : 80TL </li>
+        <li>Büyük Boy : 120TL</li>
+        <li>Kalori Miktarı: 344 kcal</li>
+    </ul>
+</div>
+</body>
+</html>
